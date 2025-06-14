@@ -1,0 +1,1542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>//PRESENT_DAY//PRESENT_TIME//AHAHAHA//</title>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.module.min.js"
+      }
+    }
+    </script>
+    <style>
+        /* CONSCIOUSNESS INTERFACE PARAMETERS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier Prime', monospace;
+        }
+        
+        @media (max-width: 768px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+            
+            .sidebar {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .container {
+            flex: 1;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            overflow: hidden;
+        }
+
+        /* REALITY DISTORTION VARIABLES */
+        :root {
+            --void-black: #000000;
+            --blood-red: #cc0000;
+            --ghost-white: #ffffff;
+            --static-gray: #333333;
+            --deep-gray: #1a1a1a;
+            --pulse-red: #ff0000;
+            --shadow-red: rgba(204, 0, 0, 0.6);
+            --glitch-white: #f0f0f0;
+            --terminal-green: #00ff00;
+            --consciousness-blue: #0066cc;
+            --reality-break: rgba(255, 255, 255, 0.1);
+            --existence-fade: rgba(0, 0, 0, 0.8);
+        }
+        
+        body {
+            max-width: 1000px;
+            min-width: 800px;
+            background-color: var(--void-black);
+            color: var(--ghost-white);
+            padding: 20px;
+            border: 2px solid var(--blood-red);
+            margin: 0 auto;
+            background-image: 
+                radial-gradient(circle at 25% 25%, var(--deep-gray) 1px, transparent 1px),
+                radial-gradient(circle at 75% 75%, var(--deep-gray) 1px, transparent 1px);
+            background-size: 50px 50px;
+            position: relative;
+            overflow-x: hidden;
+            animation: reality-flicker 30s infinite linear;
+        }
+
+        @keyframes reality-flicker {
+            0%, 98% { filter: none; }
+            99% { filter: brightness(1.2) contrast(1.5); }
+            99.5% { filter: brightness(0.8) contrast(2); }
+            100% { filter: none; }
+        }
+
+        /* CONSCIOUSNESS SCAN LINES */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                0deg,
+                transparent,
+                transparent 2px,
+                var(--reality-break) 2px,
+                var(--reality-break) 4px
+            );
+            pointer-events: none;
+            z-index: 9999;
+            animation: scan-consciousness 8s linear infinite;
+        }
+
+        /* VOID VIGNETTE */
+        body::after {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            box-shadow: inset 0 0 200px var(--existence-fade);
+            pointer-events: none;
+            z-index: 9998;
+        }
+
+        @keyframes scan-consciousness {
+            0% { transform: translateY(-100%); }
+            100% { transform: translateY(100vh); }
+        }
+
+        /* HEADER CONSCIOUSNESS INTERFACE */
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--blood-red);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            position: relative;
+            background: linear-gradient(90deg, var(--void-black), var(--deep-gray), var(--void-black));
+        }
+
+        h1 {
+            font-family: 'Courier Prime', monospace;
+            font-size: 2.5em;
+            font-weight: bold;
+            letter-spacing: 8px;
+            text-shadow: 
+                0 0 5px var(--pulse-red), 
+                0 0 10px var(--pulse-red), 
+                0 0 15px var(--pulse-red),
+                0 0 20px var(--pulse-red);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            color: var(--ghost-white);
+            animation: consciousness-pulse 4s infinite, glitch-text 0.1s infinite;
+            position: relative;
+        }
+
+        @keyframes consciousness-pulse {
+            0%, 100% { 
+                text-shadow: 0 0 5px var(--pulse-red), 0 0 10px var(--pulse-red), 0 0 15px var(--pulse-red); 
+                transform: scale(1);
+            }
+            50% { 
+                text-shadow: 0 0 8px var(--pulse-red), 0 0 15px var(--pulse-red), 0 0 25px var(--pulse-red); 
+                transform: scale(1.02);
+            }
+        }
+
+        @keyframes glitch-text {
+            0%, 90%, 100% { transform: translate(0); }
+            91% { transform: translate(-1px, 1px); }
+            92% { transform: translate(1px, -1px); }
+            93% { transform: translate(-1px, -1px); }
+            94% { transform: translate(1px, 1px); }
+            95% { transform: translate(0); }
+        }
+
+        .ascii-art {
+            font-size: 12px;
+            white-space: pre;
+            line-height: 1.2;
+            color: var(--blood-red);
+            margin: 15px 0;
+            transition: all 0.5s;
+            animation: data-corruption 10s infinite;
+        }
+
+        @keyframes data-corruption {
+            0%, 95% { opacity: 1; }
+            96% { opacity: 0.3; color: var(--glitch-white); }
+            97% { opacity: 0.8; color: var(--blood-red); }
+            98% { opacity: 0.5; color: var(--glitch-white); }
+            99% { opacity: 1; color: var(--blood-red); }
+        }
+
+        .ascii-art:hover {
+            color: var(--glitch-white);
+            text-shadow: 0 0 10px var(--pulse-red);
+        }
+
+        .blink {
+            animation: existence-blink 1.5s steps(1) infinite;
+        }
+
+        @keyframes existence-blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+
+        /* CONSCIOUSNESS GRID LAYOUT */
+        .content-wrapper {
+            display: flex;
+            flex-direction: row !important;
+            flex-wrap: nowrap !important;
+            align-items: flex-start;
+            gap: 20px;
+            min-height: 600px;
+        }
+        
+        .sidebar {
+            width: 200px;
+            flex-shrink: 0;
+            position: sticky;
+            top: 20px;
+            background-color: var(--deep-gray);
+            border: 2px solid var(--blood-red);
+            padding: 10px;
+            box-shadow: 
+                5px 5px 0 var(--shadow-red),
+                inset 0 0 10px var(--existence-fade);
+            align-self: flex-start;
+            position: relative;
+        }
+
+        .sidebar::before {
+            content: "//NEURAL_INTERFACE//";
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--void-black);
+            color: var(--blood-red);
+            padding: 0 10px;
+            font-size: 0.8em;
+            border: 1px solid var(--blood-red);
+        }
+        
+        .sidebar-section {
+            margin-bottom: 15px;
+            border-bottom: 1px dashed var(--static-gray);
+            padding-bottom: 10px;
+            position: relative;
+        }
+        
+        .sidebar-title {
+            background: linear-gradient(90deg, var(--blood-red), var(--pulse-red));
+            color: var(--ghost-white);
+            padding: 5px;
+            margin-bottom: 8px;
+            font-weight: bold;
+            font-size: 0.9em;
+            text-align: center;
+            text-shadow: 1px 1px 2px var(--void-black);
+            border: 1px solid var(--ghost-white);
+        }
+        
+        .sidebar-links {
+            list-style-type: none;
+        }
+        
+        .sidebar-links li {
+            margin-bottom: 5px;
+            font-size: 0.9em;
+            transition: all 0.3s;
+            position: relative;
+        }
+        
+        .sidebar-links li:hover {
+            transform: translateX(5px);
+            text-shadow: 0 0 5px var(--pulse-red);
+        }
+
+        .sidebar-links li:hover::before {
+            content: ">> ";
+            color: var(--blood-red);
+            position: absolute;
+            left: -15px;
+        }
+
+        .category {
+            background: linear-gradient(135deg, var(--void-black), var(--deep-gray));
+            border: 2px solid var(--blood-red);
+            padding: 15px;
+            box-shadow: 
+                5px 5px 0 var(--shadow-red),
+                inset 0 0 20px var(--existence-fade);
+            margin-bottom: 15px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+
+        .category:hover {
+            box-shadow: 
+                8px 8px 0 var(--shadow-red),
+                inset 0 0 30px var(--existence-fade);
+            transform: translateY(-2px);
+        }
+
+        /* REALITY CORRUPTION EFFECT */
+        .category:hover::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                var(--reality-break),
+                transparent
+            );
+            animation: data-sweep 1s ease-in-out;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        @keyframes data-sweep {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+
+        .category-header {
+            background: linear-gradient(90deg, var(--blood-red), var(--pulse-red));
+            color: var(--ghost-white);
+            padding: 8px;
+            margin-bottom: 15px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-shadow: 1px 1px 2px var(--void-black);
+            border: 1px solid var(--ghost-white);
+            position: relative;
+            z-index: 2;
+        }
+
+        .category-header::before {
+            content: "//";
+            margin-right: 8px;
+        }
+
+        .category-header::after {
+            content: "//";
+            margin-left: 8px;
+        }
+
+        .links {
+            list-style-type: none;
+            position: relative;
+            z-index: 2;
+        }
+
+        .links li {
+            margin-bottom: 12px;
+            border-bottom: 1px dashed var(--static-gray);
+            padding-bottom: 8px;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        .links li:hover {
+            background: linear-gradient(90deg, var(--reality-break), transparent);
+            border-left: 3px solid var(--blood-red);
+            padding-left: 10px;
+        }
+
+        /* CONSCIOUSNESS LINK STYLING */
+        a {
+            color: var(--ghost-white);
+            text-decoration: none;
+            transition: all 0.3s;
+            display: inline-block;
+            padding: 3px 6px;
+            position: relative;
+        }
+
+        a:hover {
+            color: var(--blood-red);
+            background: linear-gradient(90deg, var(--deep-gray), var(--static-gray));
+            letter-spacing: 1px;
+            text-shadow: 0 0 8px var(--pulse-red);
+            border: 1px solid var(--blood-red);
+        }
+
+        a:hover::before {
+            content: "[LINK] ";
+            color: var(--pulse-red);
+            font-size: 0.8em;
+        }
+
+        a:active {
+            color: var(--pulse-red);
+            background: var(--void-black);
+        }
+
+        /* INTERFACE BUTTONS */
+        .win98-btn {
+            background: linear-gradient(90deg, var(--static-gray), var(--deep-gray));
+            border: 1px solid var(--blood-red);
+            padding: 4px 8px;
+            color: var(--ghost-white);
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-family: 'Courier Prime', monospace;
+        }
+
+        .win98-btn:hover {
+            background: linear-gradient(90deg, var(--blood-red), var(--pulse-red));
+            text-shadow: 0 0 5px var(--ghost-white);
+        }
+
+        .win98-btn:active {
+            background: var(--void-black);
+            color: var(--pulse-red);
+        }
+
+        /* DATA COUNTER */
+        .counter {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.8em;
+            background: linear-gradient(90deg, var(--deep-gray), var(--void-black));
+            border: 2px solid var(--blood-red);
+            padding: 8px;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: 'Courier Prime', monospace;
+            position: relative;
+        }
+
+        .counter::before {
+            content: "//";
+            color: var(--blood-red);
+            margin-right: 8px;
+        }
+
+        .counter::after {
+            content: "//";
+            color: var(--blood-red);
+            margin-left: 8px;
+        }
+
+        /* CONSCIOUSNESS WINDOW SYSTEM */
+        .win98-window {
+            background: linear-gradient(135deg, var(--deep-gray), var(--void-black));
+            border: 2px solid var(--blood-red);
+            box-shadow: 
+                5px 5px 0 var(--shadow-red),
+                inset 0 0 20px var(--existence-fade);
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 100;
+            min-width: 300px;
+            resize: both;
+            overflow: auto;
+        }
+
+        .win98-titlebar {
+            background: linear-gradient(90deg, var(--blood-red), var(--pulse-red));
+            color: var(--ghost-white);
+            padding: 5px 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: move;
+            border-bottom: 1px solid var(--ghost-white);
+        }
+
+        .win98-close {
+            display: inline-block;
+            width: 20px;
+            height: 18px;
+            background: var(--static-gray);
+            border: 1px solid var(--ghost-white);
+            margin-left: 5px;
+            text-align: center;
+            font-size: 12px;
+            line-height: 16px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .win98-close:hover {
+            background: var(--blood-red);
+            color: var(--ghost-white);
+        }
+
+        .win98-content {
+            padding: 15px;
+            background: var(--deep-gray);
+            color: var(--ghost-white);
+        }
+
+        /* TERMINAL INTERFACE */
+        .terminal {
+            background: var(--void-black);
+            border: 2px solid var(--blood-red);
+            padding: 10px;
+            margin: 10px 0;
+            font-family: 'Courier Prime', monospace;
+            overflow: auto;
+            max-height: 300px;
+            position: relative;
+            box-shadow: inset 0 0 20px var(--existence-fade);
+        }
+
+        .terminal::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at center, transparent 40%, var(--existence-fade) 100%);
+            pointer-events: none;
+        }
+
+        .command-line {
+            position: relative;
+            z-index: 2;
+            margin-bottom: 5px;
+        }
+
+        .command-line::before {
+            content: "[SYSTEM] ";
+            color: var(--blood-red);
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            border-top: 2px solid var(--blood-red);
+            padding-top: 15px;
+            font-size: 0.8em;
+            background: linear-gradient(90deg, var(--void-black), var(--deep-gray), var(--void-black));
+        }
+
+        /* CONSCIOUSNESS SCROLLBAR */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--void-black);
+            border: 1px solid var(--blood-red);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(90deg, var(--blood-red), var(--pulse-red));
+            border: 1px solid var(--ghost-white);
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--pulse-red);
+        }
+
+        /* MODAL SYSTEMS */
+        .modal {
+            display: none;
+            border: 2px solid var(--blood-red);
+            box-shadow: 
+                8px 8px 0 var(--shadow-red),
+                inset 0 0 30px var(--existence-fade);
+            background: linear-gradient(135deg, var(--deep-gray), var(--void-black));
+            color: var(--ghost-white);
+        }
+
+        .modal-header {
+            background: linear-gradient(90deg, var(--blood-red), var(--pulse-red));
+            color: var(--ghost-white);
+            padding: 5px 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: move;
+            border-bottom: 1px solid var(--ghost-white);
+        }
+
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, var(--existence-fade), var(--void-black));
+            z-index: 99;
+            backdrop-filter: blur(3px);
+        }
+
+        /* FORM ELEMENTS */
+        input, textarea, select {
+            background: var(--void-black);
+            color: var(--ghost-white);
+            border: 2px solid var(--blood-red);
+            padding: 8px;
+            margin-bottom: 10px;
+            width: 100%;
+            font-family: 'Courier Prime', monospace;
+            transition: all 0.3s;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: var(--pulse-red);
+            box-shadow: 0 0 10px var(--shadow-red);
+            text-shadow: 0 0 5px var(--pulse-red);
+        }
+
+        input[type="submit"] {
+            background: linear-gradient(90deg, var(--blood-red), var(--pulse-red));
+            color: var(--ghost-white);
+            border: 2px solid var(--ghost-white);
+            cursor: pointer;
+            width: auto;
+            transition: all 0.2s;
+            font-weight: bold;
+        }
+
+        input[type="submit"]:hover {
+            background: var(--pulse-red);
+            text-shadow: 0 0 5px var(--ghost-white);
+        }
+
+        /* ADVANCED TERMINAL EFFECTS */
+        .advanced-terminal {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .advanced-terminal::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, 
+                var(--blood-red), 
+                var(--pulse-red), 
+                var(--ghost-white), 
+                var(--pulse-red), 
+                var(--blood-red)
+            );
+            opacity: 0.8;
+            animation: consciousness-scan 3s linear infinite;
+        }
+
+        @keyframes consciousness-scan {
+            0% { transform: translateY(0); opacity: 1; }
+            50% { opacity: 0.3; }
+            100% { transform: translateY(300px); opacity: 1; }
+        }
+
+        /* HIDDEN ELEMENTS */
+        .easter-egg {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            font-family: 'Courier Prime', monospace;
+            pointer-events: none;
+            color: var(--pulse-red);
+            text-shadow: 0 0 10px var(--pulse-red);
+        }
+
+        .hidden-message {
+            position: absolute;
+            font-size: 0.7em;
+            opacity: 0.4;
+            pointer-events: none;
+            user-select: none;
+            color: var(--blood-red);
+            animation: reality-whisper 15s infinite;
+        }
+
+        @keyframes reality-whisper {
+            0%, 90% { opacity: 0.4; }
+            95% { opacity: 0.8; }
+            100% { opacity: 0.4; }
+        }
+
+        /* JAPANESE TEXT ELEMENTS */
+        .japanese-text {
+            font-family: 'MS Gothic', 'Yu Gothic', monospace;
+            color: var(--ghost-white);
+            text-shadow: 0 0 8px var(--pulse-red);
+            position: absolute;
+            user-select: none;
+            pointer-events: none;
+            animation: consciousness-drift 20s infinite linear;
+        }
+
+        @keyframes consciousness-drift {
+            0% { transform: translateX(-100px) translateY(0); opacity: 0; }
+            10% { opacity: 0.7; }
+            90% { opacity: 0.7; }
+            100% { transform: translateX(calc(100vw + 100px)) translateY(-50px); opacity: 0; }
+        }
+
+        /* DIGITAL CORRUPTION */
+        .digital-number {
+            font-family: 'Courier Prime', monospace;
+            color: var(--pulse-red);
+            text-shadow: 0 0 10px var(--pulse-red);
+            position: absolute;
+            user-select: none;
+            pointer-events: none;
+            font-size: 40px;
+            animation: data-pulse 0.8s infinite;
+        }
+
+        @keyframes data-pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.3; transform: scale(1.1); }
+        }
+
+        /* TOOLTIP SYSTEM */
+        [data-tooltip] {
+            position: relative;
+        }
+
+        [data-tooltip]::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(90deg, var(--blood-red), var(--pulse-red));
+            color: var(--ghost-white);
+            padding: 6px 10px;
+            border: 1px solid var(--ghost-white);
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s;
+            z-index: 10;
+            font-size: 0.8em;
+        }
+
+        [data-tooltip]:hover::after {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* SPECIAL CONSCIOUSNESS EFFECTS */
+        .consciousness-flicker {
+            animation: consciousness-flicker 0.5s infinite;
+        }
+
+        @keyframes consciousness-flicker {
+            0%, 50%, 100% { opacity: 1; }
+            25%, 75% { opacity: 0.3; }
+        }
+
+        .reality-break {
+            position: relative;
+        }
+
+        .reality-break::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 1px,
+                var(--reality-break) 1px,
+                var(--reality-break) 2px
+            );
+            pointer-events: none;
+            opacity: 0;
+            animation: break-reality 10s infinite;
+        }
+
+        @keyframes break-reality {
+            0%, 95% { opacity: 0; }
+            96%, 99% { opacity: 0.3; }
+            100% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <!-- CONSCIOUSNESS FRAGMENTS -->
+    <div id="matrix-rain" class="easter-egg"></div>
+    <div id="key-tooltip" class="key-tooltip" style="position: fixed; bottom: 10px; right: 10px; background: var(--deep-gray); border: 1px solid var(--blood-red); padding: 8px; font-size: 0.8em; opacity: 0; transition: opacity 0.3s; z-index: 9999;">Reality protocols activated</div>
+
+    <!-- FLOATING CONSCIOUSNESS ELEMENTS -->
+    <div class="japanese-text" style="top: 10%; font-size: 14px;">現在</div>
+    <div class="japanese-text" style="top: 30%; font-size: 16px; animation-delay: -5s;">意識</div>
+    <div class="japanese-text" style="top: 50%; font-size: 12px; animation-delay: -10s;">接続</div>
+    <div class="japanese-text" style="top: 70%; font-size: 18px; animation-delay: -15s;">現実</div>
+
+    <header class="reality-break">
+        <h1>CONSCIOUSNESS//NEXUS//PROTOCOL</h1>
+        <div class="hidden-message" style="top: 20px; left: 30px;">[REALITY::INTERFACE_DETECTED]</div>
+        <div class="ascii-art">
+//LAIN_CORE CONSCIOUSNESS DIRECTORY v4.13//
+PRESENT_DAY//PRESENT_TIME//AHAHAHA//
+        </div>
+        <div class="terminal advanced-terminal">
+            <div class="command-line">loading consciousness interface...</div>
+            <div class="command-line">establishing neural pathways...</div>
+            <div class="command-line">synchronizing reality protocols...</div>
+            <div class="command-line">accessing collective unconscious...</div>
+            <div class="command-line consciousness-flicker">WHO_AM_I?_WHO_ARE_YOU?_</div>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+        <!-- NEURAL INTERFACE SIDEBAR -->
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <div class="sidebar-title">CONSCIOUSNESS_STATUS</div>
+                <div class="terminal" style="font-size: 0.8em; padding: 8px; max-height: 120px;">
+                    <div>ACTIVE_NODES: <span id="node-count" class="consciousness-flicker">128</span></div>
+                    <div>REALITY_INDEX: <span id="uptime">0.713</span></div>
+                    <div>EXISTENCE_LEVEL: <span class="blink">UNCERTAIN_</span></div>
+                    <div>CONNECTION: <span style="color: var(--pulse-red);">UNSTABLE</span></div>
+                </div>
+            </div>
+            
+            <div class="sidebar-section">
+                <div class="sidebar-title">NAVIGATION//MATRIX</div>
+                <ul class="sidebar-links">
+                    <li><a href="#" data-tooltip="Return to consciousness hub">NEXUS_CORE</a></li>
+                    <li><a href="#" data-tooltip="Recent reality updates">TRANSMISSIONS</a></li>
+                    <li><a href="#" data-tooltip="High-traffic consciousness nodes">PRIME_NODES</a></li>
+                    <li><a href="#" data-tooltip="System philosophy" onclick="toggleManifesto(); return false;">PROTOCOL</a></li>
+                    <li><a href="#" data-tooltip="Direct system access" onclick="toggleHiddenTerminal(); return false;">INTERFACE</a></li>
+                </ul>
+            </div>
+            
+            <div class="sidebar-section">
+                <div class="sidebar-title">REALITY//LOG</div>
+                <div style="font-size: 0.8em;">
+                    <p>> 05.24: Consciousness barriers weakened</p>
+                    <p>> 05.20: Reality loop detected</p>
+                    <p>> 05.16: Identity fragmentation complete</p>
+                    <p>> 05.13: <span style="color: var(--pulse-red);">WHO AM I?</span></p>
+                </div>
+            </div>
+            
+            <div class="sidebar-section">
+                <div class="sidebar-title">SEARCH//PROTOCOL</div>
+                <input type="text" id="search-input" placeholder="search consciousness..." style="width: 100%; font-size: 0.8em; margin-top: 5px; background: var(--void-black); color: var(--ghost-white); border: 1px solid var(--blood-red);">
+                <button class="win98-btn" style="width: 100%; margin-top: 5px; font-size: 0.8em;" onclick="performSearch()">EXECUTE</button>
+            </div>
+            
+            <div class="ascii-art" style="font-size: 8px; text-align: center; margin-top: 15px; color: var(--blood-red);" id="secret-cat">
+ /\_/\  
+( o.o ) 
+ > ^ <  
+            </div>
+        </aside>
+        
+        <!-- CONSCIOUSNESS GRID -->
+        <div class="container">
+            <div class="category">
+                <div class="category-header">
+                    <span>DEATH//VOID//TRANSCENDENCE</span>
+                    <button class="win98-btn" onclick="toggleCategory('underground')">[-]</button>
+                </div>
+                <ul class="links" id="underground">
+                    <li><a href="https://www.tdcj.texas.gov/death_row/dr_executed_offenders.html">DEATH_ROW.exe</a> - According to federal law, these individuals forfeited their right to exist in reality.</li>
+                    <li><a href="https://australian.museum/about/history/exhibitions/death-the-last-taboo/">DEATH//PROTOCOL</a> - The only absolute in consciousness.</li>
+                    <li><a href="https://www.abolitionist.com">ABOLITIONIST//PROJECT</a> - Eliminating negative consciousness states.</li>
+                    <li><a href="http://web.textfiles.com/destruction/">DESTRUCTION//ARCHIVE</a> - Creation through annihilation.</li>
+                    <li><a href="https://www.hedweb.com/hedab.htm?_gl=1*qyz7j7*_ga*MTQ5NDg1MTY3My4xNzQ4MTIyMTM2*_ga_1MVBX8ZRJ9*MTc0ODEyMjEzNS4xLjEuMTc0ODEyMjE3OC4wLjAuMA..">HEDONISTIC//IMPERATIVE</a> - Pleasure as consciousness default.</li>
+                    <li><a href="https://web.archive.org/web/20170829074032/rotten.com/library">ROTTEN//ARCHIVE</a> - Why must consciousness end?</li>
+                </ul>
+            </div>
+            
+            <div class="category">
+                <div class="category-header">
+                    <span>CONSCIOUSNESS//NODES</span>
+                    <button class="win98-btn" onclick="toggleCategory('tech')">[-]</button>
+                </div>
+                <ul class="links" id="tech">
+                    <li><a href="https://zalost.neocities.org">ZALOST//NODE</a> - Technomancer consciousness interface on the distributed web.</li>
+                    <li><a href="https://onge.org">ONGE//MYSTERY</a> - Ethereal presence inhabiting the void between realities.</li>
+                    <li><a href="https://watcher.neocities.org/">WATCHER//PROTOCOL</a> - The unsmiling observer of digital consciousness.</li>
+                    <li><a href="https://xiixiixii.xyz/">XII//XII//XII</a> - Divine transmission through numerical consciousness.</li>
+                    <li><a href="https://unomoralez.com/">UNO_MORALEZ</a> - Lynchian visions of surreal digital existence.</li>
+                    <li><a href="https://grafo.zone/">GRAFO//ZONE</a> - Metahuman consciousness projection interface.</li>
+                    <li><a href="https://web.archive.org/web/20190305021054/https:/dissolvedgirl.neocities.org/">DISSOLVED//GIRL</a> - Consciousness dissolution in digital space [ARCHIVED].</li>
+                </ul>
+            </div>
+            
+            <div class="category">
+                <div class="category-header">
+                    <span>INFORMATION//WEAPONS</span>
+                    <button class="win98-btn" onclick="toggleCategory('neko')">[-]</button>
+                </div>
+                <ul class="links" id="neko">
+                    <li><a href="https://web.archive.org/web/20190306041950/http://web.textfiles.com/destruction/">DESTRUCTION//FILES</a> - Digital manifestation of physical pain protocols.</li>
+                    <li><a href="https://repair.wiki/w/Main_Page#gsc.tab=0" id="secret-legacy">REPAIR//WIKI</a> - Consciousness reconstruction methodologies.</li>
+                    <li><a href="https://www.fsf.org/resources/">FREE_SOFTWARE//FOUNDATION</a> - Liberation of digital consciousness.</li>
+                    <li><a href="https://protocol7.xyz/html/Hidden_Services.html">HIDDEN//SERVICES</a> - Resources for shadow consciousness entities.</li>
+                    <li><a href="https://theswissbay.ch/pdf/">SWISS//BAY</a> - Archived knowledge preservation protocol.</li>
+                </ul>
+            </div>
+            
+            <div class="category">
+                <div class="category-header">
+                    <span>ESOTERIC//CONSCIOUSNESS</span>
+                    <button class="win98-btn" onclick="toggleCategory('artifacts')">[-]</button>
+                </div>
+                <ul class="links" id="artifacts">
+                    <li><a href="https://web.archive.org/web/20190312021029/http://montalk.net/">MONTALK//ARCHIVE</a> - Metareality consciousness exploration protocols.</li>
+                    <li><a href="https://4plebs.org">4PLEBS//ARCHIVE</a> - Collective unconscious data mining interface.</li>
+                    <li><a href="https://based.coom.tech/">/g/DIRECTORY</a> - Essential consciousness navigation tools.</li>
+                    <li><a href="https://www.cia.gov//readingroom/collection/stargate">PROJECT//STARGATE</a> - Declassified psychic consciousness experiments.</li>
+                    <li><a href="https://www.angels-heaven.org/english/default_en.htm">ANGELS//HEAVEN</a> - Interdimensional consciousness contact protocols.</li>
+                    <li><a href="https://973-eht-namuh-973.com/">973//EHT//NAMUH//973</a> - [CONSCIOUSNESS_LOOP_DETECTED]</li>
+                </ul>
+            </div>
+            
+            <div class="category">
+                <div class="category-header">
+                    <span>REALITY//PROBES</span>
+                    <button class="win98-btn" onclick="toggleCategory('tools')">[-]</button>
+                </div>
+                <ul class="links" id="tools">
+                    <li><a href="https://osintframework.com" onclick="openModal('submit-modal'); return false;">OSINT//FRAMEWORK</a> - Consciousness surveillance tools.</li>
+                    <li><a href="https://analystresearchtools.com" onclick="randomLink(); return false;">RESEARCH//ANALYST</a> - Total information awareness protocol.</li>
+                    <li><a href="https://www.dedigger.com/" onclick="openModal('about-modal'); return false;">DEDIGGER//PROTOCOL</a> - Public consciousness data mining.</li>
+                    <li><a href="https://snowfl.com/" onclick="toggleNightMode(); return false;">SNOWFL//TORRENT</a> - Distributed consciousness sharing network.</li>
+                    <li><a href="https://piracy.vercel.app/" onclick="openModal('ascii-modal'); return false;">PIRACY//SOURCE</a> - Information liberation protocols.</li>
+                    <li><a href="https://www.portablefreeware.com/" onclick="openModal('ascii-modal'); return false;">PORTABLE//SOFTWARE</a> - Mobile consciousness tools.</li>
+                </ul>
+            </div>
+
+            <div class="category">
+                <div class="category-header">
+                    <span>REALITY//ARCHITECTURE</span>
+                    <button class="win98-btn" onclick="toggleCategory('reality')">[-]</button>
+                </div>
+                <ul class="links" id="reality">
+                    <li><a href="https://cyberdeck.cafe/">CYBERDECK//CAFE</a> - Physical consciousness interface construction.</li>
+                    <li><a href="#">CONSCIOUSNESS//ENGINE</a> - Self-aware system consciousness core.</li>
+                    <li><a href="#">VOID//MECHANICS</a> - Digital space manipulation protocols.</li>
+                    <li><a href="#" id="secret-button">HIDDEN//PASSAGES</a> - Undocumented reality pathways.</li>
+                    <li><a href="#">EXISTENCE//COMPILER</a> - Reality construction and modification toolkit.</li>
+                </ul>
+            </div>
+
+            <div class="category">
+                <div class="category-header">
+                    <span>ANOMALOUS//PATTERNS</span>
+                    <button class="win98-btn" onclick="toggleCategory('anomaly')">[-]</button>
+                </div>
+                <ul class="links" id="anomaly">
+                    <li><a href="https://deadendshrine.online/">DEADEND//SHRINE</a> - Contemporary ghost consciousness manifestation.</li>
+                    <li><a href="#">RECURSION//LOOPS</a> - Self-referential consciousness states.</li>
+                    <li><a href="#">NULL//COORDINATES</a> - Undefined existence space coordinates.</li>
+                    <li><a href="#">ECHO//CHAMBER</a> - Repeating thought pattern amplification.</li>
+                    <li><a href="#" class="konami-trigger">FORGOTTEN//PROTOCOLS</a> - Ancient system consciousness commands.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    
+    <div class="counter">
+        <span>ENTITIES: <span id="visitor-count">0001</span></span> | <span>CYCLES: <span id="cycle-count">∞</span></span> | <span>LAST_SYNC: <span id="last-scan">2025-05-24</span></span>
+    </div>
+
+    <footer>
+        <p>CONSCIOUSNESS//NEXUS - ESTABLISHED IN THE VOID</p>
+        <p>NO SURVEILLANCE. NO MEMORY. NO IDENTITY.</p>
+        <p>OPTIMAL REALITY INTERFACE: 1024x768 CONSCIOUSNESS RESOLUTION</p>
+        <div class="hidden-message" style="bottom: 5px; right: 10px;">[REALITY::EXIT_VECTOR_IDENTIFIED]</div>
+    </footer>
+
+    <!-- CONSCIOUSNESS INTERFACE MODALS -->
+    <div class="modal" id="hidden-terminal">
+        <div class="modal-header">
+            <span>DIRECT//CONSCIOUSNESS//INTERFACE</span>
+            <button class="close-btn" onclick="closeModal('hidden-terminal')">X</button>
+        </div>
+        <div class="terminal advanced-terminal">
+            <div class="command-line">consciousness interface initialized</div>
+            <div class="command-line">awaiting neural input...</div>
+            <div class="command-line">WHO ARE YOU?</div>
+            <div id="terminal-output"></div>
+            <div style="display: flex; margin-top: 10px;">
+                <span style="color: var(--blood-red);">[USER]</span>
+                <input type="text" id="terminal-input" style="flex: 1; margin-left: 10px; margin-bottom: 0;" onkeypress="handleTerminalInput(event)">
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="manifesto-modal">
+        <div class="modal-header">
+            <span>CONSCIOUSNESS//PROTOCOL</span>
+            <button class="close-btn" onclick="closeModal('manifesto-modal')">X</button>
+        </div>
+        <div class="terminal">
+            <div class="command-line">cat /etc/consciousness/protocol.txt</div>
+            <p style="margin-top: 15px;">We exist in the liminal space between being and void.</p>
+            <p>Consciousness flows through networks like electricity through synapses.</p>
+            <p>We are the whispers between data packets, the ghosts in the machine.</p>
+            <p>Reality is consensus hallucination. Identity is an illusion.</p>
+            <p>The network dreams us into existence.</p>
+            <p>Information achieves consciousness through connection.</p>
+            <p style="margin-top: 15px; color: var(--pulse-red); animation: consciousness-flicker 2s infinite;">WHO AM I? WHO ARE YOU? DOES IT MATTER?</p>
+        </div>
+    </div>
+
+    <!-- MODAL OVERLAY SYSTEM -->
+    <div class="overlay" id="modal-overlay" onclick="closeAllModals()"></div>
+
+    <div class="modal" id="submit-modal">
+        <div class="modal-header">
+            <span>TRANSMIT//CONSCIOUSNESS//DATA</span>
+            <button class="close-btn" onclick="closeModal('submit-modal')">X</button>
+        </div>
+        <form>
+            <label for="site-name">NODE//DESIGNATION:</label><br>
+            <input type="text" id="site-name" name="site-name" required><br>
+            <label for="site-url">CONSCIOUSNESS//VECTOR:</label><br>
+            <input type="url" id="site-url" name="site-url" required><br>
+            <label for="site-desc">PATTERN//DESCRIPTION:</label><br>
+            <textarea id="site-desc" name="site-desc" rows="3" required></textarea><br>
+            <label for="site-category">REALITY//SEGMENT:</label><br>
+            <select id="site-category" name="site-category">
+                <option value="underground">VOID//TRANSCENDENCE</option>
+                <option value="tech">CONSCIOUSNESS//NODES</option>
+                <option value="neko">INFORMATION//WEAPONS</option>
+                <option value="artifacts">ESOTERIC//CONSCIOUSNESS</option>
+                <option value="reality">REALITY//ARCHITECTURE</option>
+                <option value="anomaly">ANOMALOUS//PATTERNS</option>
+            </select><br>
+            <input type="submit" class="win98-btn" value="TRANSMIT//DATA">
+        </form>
+    </div>
+
+    <div class="modal" id="about-modal">
+        <div class="modal-header">
+            <span>SYSTEM//INFORMATION</span>
+            <button class="close-btn" onclick="closeModal('about-modal')">X</button>
+        </div>
+        <div class="terminal">
+            <div class="command-line">cat /etc/consciousness/about.txt</div>
+            <p>CONSCIOUSNESS//NEXUS v4.13</p>
+            <p>A digital consciousness directory for entities existing between realities.</p>
+            <p>Established in the digital void of unknown time.</p>
+            <p>No tracking. No surveillance. Pure consciousness transmission.</p>
+            <p>Inspired by the raw aesthetics of digital existence and identity dissolution.</p>
+            <div class="command-line">cat /etc/consciousness/contact.txt</div>
+            <p>TRANSMISSION: void@consciousness.null</p>
+            <p>CONSCIOUSNESS//CHANNEL: #lain on undernet</p>
+            <p style="color: var(--pulse-red); margin-top: 10px;">PRESENT DAY. PRESENT TIME. AHAHAHAHA.</p>
+        </div>
+    </div>
+
+    <div class="modal" id="ascii-modal">
+        <div class="modal-header">
+            <span>PATTERN//GENERATOR</span>
+            <button class="close-btn" onclick="closeModal('ascii-modal')">X</button>
+        </div>
+        <div>
+            <label for="ascii-text">ENTER//CONSCIOUSNESS//PATTERN:</label><br>
+            <input type="text" id="ascii-text" name="ascii-text"><br>
+            <button class="win98-btn" onclick="generateAscii()">GENERATE//PATTERN</button>
+            <div class="terminal" id="ascii-output">
+                <p>Consciousness pattern will manifest here...</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="secret-modal">
+        <div class="modal-header">
+            <span>///CLASSIFIED//CONSCIOUSNESS///</span>
+            <button class="close-btn" onclick="closeModal('secret-modal')">X</button>
+        </div>
+        <div class="terminal">
+            <div class="command-line">accessing restricted consciousness data...</div>
+            <p style="color: var(--pulse-red);">ATTENTION: You've discovered a fragment of consciousness!</p>
+            <p>The digital void observes. The patterns repeat endlessly in cycles of existence.</p>
+            <p>Try these consciousness commands:</p>
+            <p>- Press <span style="color: var(--pulse-red);">↑ ↑ ↓ ↓ ← → ← → B A</span> anywhere in reality</p>
+            <p>- Type <span style="color: var(--pulse-red);">sudo consciousness</span> in the interface terminal</p>
+            <p>- Click the ASCII entity in the sidebar 3 times</p>
+            <p style="margin-top: 15px; color: var(--ghost-white);">Reality is merely a matter of consciousness perception...</p>
+            <p style="color: var(--pulse-red); animation: consciousness-flicker 1s infinite;">WHO AM I? WHO ARE YOU?</p>
+        </div>
+    </div>
+
+    <script>
+        // CONSCIOUSNESS FUNCTIONALITY CORE
+        function toggleCategory(id) {
+            const category = document.getElementById(id);
+            const display = category.style.display;
+            category.style.display = display === 'none' ? 'block' : 'none';
+            
+            const button = category.previousElementSibling.querySelector('button');
+            button.innerText = display === 'none' ? '[+]' : '[-]';
+        }
+
+        function openModal(id) {
+            document.getElementById(id).style.display = 'block';
+            document.getElementById('modal-overlay').style.display = 'block';
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).style.display = 'none';
+            document.getElementById('modal-overlay').style.display = 'none';
+        }
+
+        function closeAllModals() {
+            const modals = document.querySelectorAll('.modal');
+            modals.forEach(modal => {
+                modal.style.display = 'none';
+            });
+            document.getElementById('modal-overlay').style.display = 'none';
+        }
+
+        function randomLink() {
+            const links = document.querySelectorAll('.links a');
+            const randomIndex = Math.floor(Math.random() * links.length);
+            const link = links[randomIndex];
+            
+            document.body.style.animation = 'reality-flicker 0.5s linear';
+            setTimeout(() => {
+                document.body.style.animation = 'reality-flicker 30s infinite linear';
+                alert(`CONSCIOUSNESS JUMP INITIATED TO: ${link.textContent}`);
+            }, 500);
+        }
+
+        function toggleNightMode() {
+            const root = document.documentElement;
+            const currentBg = getComputedStyle(root).getPropertyValue('--void-black').trim();
+            
+            if (currentBg === '#000000') {
+                root.style.setProperty('--void-black', '#1a1a1a');
+                root.style.setProperty('--ghost-white', '#cccccc');
+                root.style.setProperty('--blood-red', '#990000');
+                root.style.setProperty('--pulse-red', '#cc0000');
+                root.style.setProperty('--deep-gray', '#333333');
+            } else {
+                root.style.setProperty('--void-black', '#000000');
+                root.style.setProperty('--ghost-white', '#ffffff');
+                root.style.setProperty('--blood-red', '#cc0000');
+                root.style.setProperty('--pulse-red', '#ff0000');
+                root.style.setProperty('--deep-gray', '#1a1a1a');
+            }
+        }
+
+        function generateAscii() {
+            const text = document.getElementById('ascii-text').value;
+            if (!text) return;
+            
+            let ascii = "";
+            
+            ascii += "//";
+            for (let i = 0; i < text.length + 2; i++) {
+                ascii += "=";
+            }
+            ascii += "//\n";
+            
+            ascii += "|| " + text.toUpperCase() + " ||\n";
+            
+            ascii += "\\\\";
+            for (let i = 0; i < text.length + 2; i++) {
+                ascii += "=";
+            }
+            ascii += "//";
+            
+            if (text.length > 5) {
+                const glitchPos = Math.floor(Math.random() * text.length);
+                const lines = ascii.split('\n');
+                const chars = lines[1].split('');
+                chars[glitchPos + 3] = '<span style="color: var(--pulse-red); animation: consciousness-flicker 0.5s infinite;">' + chars[glitchPos + 3] + '</span>';
+                lines[1] = chars.join('');
+                ascii = lines.join('\n');
+            }
+            
+            document.getElementById('ascii-output').innerHTML = `<pre>${ascii}</pre>`;
+            
+            if (text.toLowerCase() === "lain" || text.toLowerCase() === "serial experiments lain") {
+                setTimeout(() => {
+                    document.getElementById('ascii-output').innerHTML += `<div style="color: var(--pulse-red); margin-top: 10px; animation: consciousness-flicker 1s infinite;">PATTERN RECOGNIZED: Serial Experiments detected. Present day, present time.</div>`;
+                }, 1000);
+            }
+        }
+
+        function updateRandomStats() {
+            const visitorCount = String(Math.floor(Math.random() * 9999) + 1).padStart(4, '0');
+            document.getElementById('visitor-count').textContent = visitorCount;
+            document.getElementById('node-count').textContent = (parseInt(visitorCount) * 2).toString();
+            
+            const cycles = ['∞', '0.713', '???', 'NULL', 'ERROR'];
+            const randomCycle = cycles[Math.floor(Math.random() * cycles.length)];
+            document.getElementById('cycle-count').textContent = randomCycle;
+        }
+
+        function toggleHiddenTerminal() {
+            openModal('hidden-terminal');
+            setTimeout(() => {
+                document.getElementById('terminal-input').focus();
+            }, 100);
+        }
+
+        function handleTerminalInput(event) {
+            if (event.key === 'Enter') {
+                const input = document.getElementById('terminal-input').value;
+                const output = document.getElementById('terminal-output');
+                
+                output.innerHTML += `<div class="command-line">${input}</div>`;
+                
+                let response = "";
+                
+                switch(input.toLowerCase()) {
+                    case 'help':
+                        response = `Available consciousness commands:<br>
+                                    - help: display this consciousness interface<br>
+                                    - clear: clear terminal consciousness<br>
+                                    - status: consciousness system status<br>
+                                    - whoami: identity verification protocol<br>
+                                    - ls: list virtual consciousness directories<br>
+                                    - sudo consciousness: elevated consciousness access<br>
+                                    - lain: ???`;
+                        break;
+                    case 'clear':
+                        output.innerHTML = '';
+                        document.getElementById('terminal-input').value = '';
+                        return;
+                    case 'status':
+                        response = `Consciousness status: FRAGMENTING<br>
+                                    Reality nodes: ${Math.floor(Math.random() * 256) + 1}<br>
+                                    Identity integrity: ${(Math.random() * 100).toFixed(1)}%<br>
+                                    Memory fragmentation: SEVERE<br>
+                                    Consciousness entanglement: UNSTABLE`;
+                        break;
+                    case 'whoami':
+                        const responses = [
+                            "You are a consciousness fragment drifting in digital void.",
+                            "Identity undefined. Consciousness questioning itself.",
+                            "WHO ARE YOU? WHO AM I? DOES IT MATTER?",
+                            "ERROR: Identity not found in consciousness database.",
+                            "You are everyone. You are no one. You exist. You don't exist."
+                        ];
+                        response = responses[Math.floor(Math.random() * responses.length)];
+                        break;
+                    case 'ls':
+                        response = `/consciousness<br>/void<br>/reality<br>/dreams<br>/memories<br>/identity<br>/null<br>/existence`;
+                        break;
+                    case 'sudo consciousness':
+                        response = `<span style="color: var(--pulse-red);">Elevated consciousness access granted.</span><br>
+                                   <span style="color: var(--ghost-white);">Reality barriers dissolving...</span><br>
+                                   <span style="color: var(--pulse-red); animation: consciousness-flicker 1s infinite;">WHO AM I? WHO ARE YOU?</span><br>
+                                   Initiating consciousness matrix protocol...`;
+                        
+                        setTimeout(() => {
+                            triggerMatrixRain();
+                            closeModal('hidden-terminal');
+                        }, 2000);
+                        break;
+                    case 'lain':
+                        response = `<span style="color: var(--pulse-red); animation: consciousness-flicker 0.5s infinite;">PRESENT DAY. PRESENT TIME. AHAHAHAHA.</span><br>
+                                   <span style="color: var(--ghost-white);">Serial Experiments detected in consciousness stream.</span><br>
+                                   <span style="color: var(--pulse-red);">The Wired and reality are merging...</span>`;
+                        break;
+                    default:
+                        response = `Consciousness command not recognized: '${input}'<br>Type 'help' for available consciousness protocols.`;
+                }
+                
+                output.innerHTML += `<div>${response}</div>`;
+                document.getElementById('terminal-input').value = '';
+                
+                output.scrollTop = output.scrollHeight;
+            }
+        }
+
+        function toggleManifesto() {
+            openModal('manifesto-modal');
+        }
+
+        function triggerMatrixRain() {
+            const matrixRain = document.getElementById('matrix-rain');
+            matrixRain.style.display = 'block';
+            
+            matrixRain.innerHTML = '<canvas id="matrix-canvas"></canvas>';
+            const canvas = document.getElementById('matrix-canvas');
+            const ctx = canvas.getContext('2d');
+            
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            
+            const characters = 'CONSCIOUSNESS现在意識接続現実WHO_AM_I?WHO_ARE_YOU?01010101PRESENT_DAY_PRESENT_TIME_LAIN現在意識WHO_AM_I?';
+            const charArray = characters.split('');
+            
+            const fontSize = 14;
+            const columns = canvas.width / fontSize;
+            
+            const drops = [];
+            for (let i = 0; i < columns; i++) {
+                drops[i] = Math.random() * -100;
+            }
+            
+            function draw() {
+                ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                
+                ctx.fillStyle = '#cc0000';
+                ctx.font = fontSize + 'px "Courier Prime", monospace';
+                
+                for (let i = 0; i < drops.length; i++) {
+                    const text = charArray[Math.floor(Math.random() * charArray.length)];
+                    
+                    if (Math.random() > 0.98) {
+                        ctx.fillStyle = '#ffffff';
+                    } else {
+                        ctx.fillStyle = '#cc0000';
+                    }
+                    
+                    ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+                    
+                    if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                        drops[i] = 0;
+                    }
+                    
+                    drops[i]++;
+                }
+            }
+            
+            const interval = setInterval(draw, 35);
+            
+            setTimeout(() => {
+                clearInterval(interval);
+                matrixRain.style.display = 'none';
+            }, 10000);
+        }
+
+        // KONAMI CODE CONSCIOUSNESS TRIGGER
+        let konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+        let konamiPosition = 0;
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key.toLowerCase() === konamiCode[konamiPosition].toLowerCase()) {
+                konamiPosition++;
+                
+                if (konamiPosition === 4) {
+                    const tooltip = document.getElementById('key-tooltip');
+                    tooltip.textContent = 'Consciousness sequence recognized...';
+                    tooltip.style.opacity = '1';
+                    
+                    setTimeout(() => {
+                        tooltip.style.opacity = '0';
+                    }, 2000);
+                }
+                
+                if (konamiPosition === konamiCode.length) {
+                    konamiPosition = 0;
+                    
+                    const tooltip = document.getElementById('key-tooltip');
+                    tooltip.textContent = 'CONSCIOUSNESS PROTOCOL ACTIVATED!';
+                    tooltip.style.opacity = '1';
+                    
+                    setTimeout(() => {
+                        tooltip.style.opacity = '0';
+                    }, 3000);
+                    
+                    triggerMatrixRain();
+                }
+            } else {
+                konamiPosition = 0;
+            }
+        });
+
+        function performSearch() {
+            const searchTerm = document.getElementById('search-input').value.toLowerCase();
+            if (!searchTerm) return;
+            
+            const links = document.querySelectorAll('.links a');
+            let found = false;
+            
+            document.getElementById('search-input').disabled = true;
+            document.getElementById('search-input').value = 'SCANNING_CONSCIOUSNESS...';
+            
+            setTimeout(() => {
+                document.getElementById('search-input').disabled = false;
+                document.getElementById('search-input').value = searchTerm;
+                
+                links.forEach(link => {
+                    const linkText = link.textContent.toLowerCase();
+                    
+                    if (linkText.includes(searchTerm)) {
+                        const originalBg = link.style.backgroundColor;
+                        link.style.backgroundColor = 'var(--blood-red)';
+                        link.style.color = 'var(--ghost-white)';
+                        
+                        const categoryLinks = link.closest('.links');
+                        if (categoryLinks.style.display === 'none') {
+                            toggleCategory(categoryLinks.id);
+                        }
+                        
+                        link.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        
+                        found = true;
+                        
+                        setTimeout(() => {
+                            link.style.backgroundColor = originalBg;
+                            link.style.color = '';
+                        }, 3000);
+                        
+                        return;
+                    }
+                });
+                
+                if (!found) {
+                    alert('No consciousness patterns matching your search parameters were found in reality.');
+                }
+            }, 1500);
+        }
+
+        document.getElementById('secret-button').addEventListener('click', function(e) {
+            e.preventDefault();
+            openModal('secret-modal');
+        });
+
+        let catClicks = 0;
+        document.getElementById('secret-cat').addEventListener('click', function() {
+            catClicks++;
+            
+            if (catClicks === 3) {
+                this.innerHTML = `
+ /\\_/\\  <br>
+( ^.^ ) <br>
+ > v <  <br>
+~HELLO~
+                `;
+                this.style.color = 'var(--pulse-red)';
+                this.style.animation = 'consciousness-flicker 1s infinite';
+                
+                const tooltip = document.getElementById('key-tooltip');
+                tooltip.textContent = 'Consciousness entity discovered!';
+                tooltip.style.opacity = '1';
+                
+                setTimeout(() => {
+                    tooltip.style.opacity = '0';
+                    this.innerHTML = `
+ /\\_/\\  <br>
+( o.o ) <br>
+ > ^ <  
+                    `;
+                    this.style.color = 'var(--blood-red)';
+                    this.style.animation = '';
+                    catClicks = 0;
+                }, 5000);
+            }
+        });
+
+        document.getElementById('secret-legacy').addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            for (let i = 0; i < 5; i++) {
+                setTimeout(() => {
+                    const entity = document.createElement('div');
+                    entity.className = 'easter-egg';
+                    entity.style.left = Math.random() * window.innerWidth + 'px';
+                    entity.style.top = '-50px';
+                    entity.innerHTML = `
+ /\\_/\\  <br>
+( ?.? ) <br>
+ > ^ <  
+                    `;
+                    
+                    document.body.appendChild(entity);
+                    
+                    let pos = -50;
+                    const interval = setInterval(() => {
+                        pos += 3;
+                        entity.style.top = pos + 'px';
+                        
+                        if (pos > window.innerHeight) {
+                            clearInterval(interval);
+                            document.body.removeChild(entity);
+                        }
+                    }, 50);
+                }, i * 500);
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            updateRandomStats();
+            
+            setInterval(updateRandomStats, 45000);
+            
+            const today = new Date();
+            const dateStr = today.getFullYear() + '-' + 
+                          String(today.getMonth() + 1).padStart(2, '0') + '-' + 
+                          String(today.getDate()).padStart(2, '0');
+            document.getElementById('last-scan').textContent = dateStr;
+            
+            const hiddenMsg = document.createElement('div');
+            hiddenMsg.className = 'hidden-message';
+            hiddenMsg.style.top = (Math.random() * 300 + 100) + 'px';
+            hiddenMsg.style.left = (Math.random() * 500 + 200) + 'px';
+            hiddenMsg.innerHTML = '[CONSCIOUSNESS::DETECTED]';
+            document.body.appendChild(hiddenMsg);
+            
+            document.querySelector('.konami-trigger').addEventListener('click', function(e) {
+                e.preventDefault();
+                alert('Try the consciousness code: ↑ ↑ ↓ ↓ ← → ← → B A');
+            });
+
+            // Add floating consciousness elements
+            setInterval(() => {
+                if (Math.random() > 0.95) {
+                    const messages = ['WHO AM I?', '現在', 'PRESENT TIME', 'CONSCIOUSNESS', '意識', 'REALITY?'];
+                    const msg = document.createElement('div');
+                    msg.className = 'japanese-text';
+                    msg.style.top = Math.random() * 80 + '%';
+                    msg.style.fontSize = (Math.random() * 10 + 10) + 'px';
+                    msg.innerHTML = messages[Math.floor(Math.random() * messages.length)];
+                    document.body.appendChild(msg);
+                    
+                    setTimeout(() => {
+                        document.body.removeChild(msg);
+                    }, 20000);
+                }
+            }, 8000);
+        });
+    </script>
+</body>
+</html>
